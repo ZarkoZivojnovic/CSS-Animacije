@@ -1,0 +1,389 @@
+html {box-sizing: border-box;}
+*,*:before,*:after {box-sizing: inherit;margin: auto;}
+
+
+header, footer {
+    font-family: 'Mina', sans-serif;
+    height: 300px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b6b6b+0,ffffff+100 */
+    background: #6b6b6b; /* Old browsers */
+    background: -moz-linear-gradient(top, #6b6b6b 0%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #6b6b6b 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #6b6b6b 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b6b6b', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */}
+nav {text-align: center;}
+
+header a {
+    display: block;
+    text-decoration-line: none;
+    padding: 10px 20px;
+    width: 180px;
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 15px 5px;
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+    outline: solid deepskyblue 3px;
+    transition: all 1s;
+    -webkit-box-shadow: 0 15px 18px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 15px 18px 1px rgba(0,0,0,0.75);
+    box-shadow: 0 15px 18px 1px rgba(0,0,0,0.75);
+}
+header a:hover {
+    cursor: pointer;
+    text-decoration-line: none;
+    background-color: white;
+    color: deepskyblue;
+    transform: translate(0,10px);
+}
+header li {display: inline-block;}
+
+header h1 {
+    font-size: 80px;
+    margin-top:40px;
+    font-weight: 900;
+    text-shadow: 0 0 15px rgba(255, 255, 0, 1);
+    letter-spacing: 8px;
+    transition: all 1s;
+    animation: glavniHeder 10s infinite;
+}
+@keyframes glavniHeder {
+    0% {color:white; }
+    25% {color: #40ffe1;}
+    50% {color: papayawhip;}
+    75% {color: white;}
+    100% {color: #deff4c;}
+}
+header h1:hover {
+    transform: scale(1.2,1.2);
+    text-shadow: 0 0 15px rgba(255, 255, 0, 1);
+}
+footer {height: 60px;}
+
+main {
+    min-height: 600px;
+    width: 1200px;
+    margin: auto;
+    padding: 15px;
+}
+main>div {
+    border: solid white 1px;
+    margin: 5px auto;
+    padding:30px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9e9e9e+0,494949+100 */
+    background: rgb(158,158,158); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(158,158,158,1) 0%, rgba(73,73,73,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(158,158,158,1) 0%,rgba(73,73,73,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(158,158,158,1) 0%,rgba(73,73,73,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e9e9e', endColorstr='#494949',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    transition: all 1s;
+}
+main>div:hover {
+    transform: scale(1.01,1.01);
+    -webkit-box-shadow: 0px 0px 29px 16px rgba(61,61,61,1);
+    -moz-box-shadow: 0px 0px 29px 16px rgba(61,61,61,1);
+    box-shadow: 0px 0px 29px 16px rgba(61,61,61,1);
+}
+.transitions li, .transform3D li, .transform2D li {color: white;}
+.transform2D ul li {
+    display: inline-block;
+    padding:10px 20px;
+}
+h1, h3{text-align: center;}
+
+main h1 {
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-family: 'Mina', sans-serif;
+    padding:50px;
+    font-size:40px;
+    margin: 50px auto;
+    transition: all 1500ms linear;
+}
+main h1:hover {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    color: white;
+    letter-spacing: 8px;
+}
+main h3 {
+    font-family: 'Mina', sans-serif;
+    padding: 20px;
+    margin: 30px auto;
+    color: deepskyblue;
+    transition: all 1s;
+}
+main h3:hover {
+    letter-spacing: 3px;
+    text-shadow: 0 0 30px rgb(246, 0, 255);
+}
+main p {color: white; font-style: italic}
+code {color: yellow !important;
+transition: all 1s}
+code:hover {
+    color: greenyellow !important;
+}
+
+hr {
+    height: 1px;
+    background: white;
+    width: 300px;
+}
+.transformBefore, .before3d, .transitionBox {
+    border: solid black 1px;
+    background-color: rgba(0, 191, 225, 0.5);
+    color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.transformAfter, .after3D {
+    border: solid black 1px;
+    background-color: deepskyblue;
+    color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+.translate {
+    transform: translate(25px,25px);
+}
+.translateNaslov h3:hover {
+    transform: translate(30px,30px);
+}
+.rotate {
+    transform: rotate(45deg);
+}
+.rotateNaslov h3:hover {
+    transform: rotate(360deg);
+}
+.scale {
+    opacity: 0.7;
+    transform: scale(1.5,1.5);
+}
+.scaleNaslov h3:hover {
+    transform: scale(1.5,1.5);
+}
+.skewX {
+    opacity: 0.7;
+    transform: skewX(20deg);
+}
+.skewXnaslov h3:hover {
+    transform: skewX(30deg);
+}
+.skewY {
+    opacity: 0.7;
+    transform: skewY(30deg);
+}
+.skewYnaslov h3:hover {
+    transform: skewY(45deg);
+}
+.matrix {
+    opacity: 0.7;
+    transform: matrix(1, 0.3, 0.5, 1.5, 1, 2);
+}
+.matrixNaslov h3:hover {
+    transform: matrix(1.2,1,1,1.2,1,1);
+}
+.rotateX {
+    opacity: 0.7;
+    transform: rotateX(150deg);
+}
+.rotXnaslov h3:hover {
+    transform: rotateX(180deg);
+}
+.rotateY {
+    opacity: 0.7;
+    transform: rotateY(150deg);
+}
+.rotYnaslov h3:hover {
+    transform: rotateY(180deg);
+}
+.before3dRotateZ {
+    border: solid black 1px;
+    background-color: rgba(0, 191, 225, 0.5);
+    color: white;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+}
+.after3dRotateZ {
+    border: solid black 1px;
+    background-color: deepskyblue;
+    color: white;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+.rotateZ {
+    opacity: 0.7;
+    transform: rotateZ(90deg);
+}
+.rotZnaslov h3:hover {
+    transform: rotateZ(90deg);
+}
+.firstTransition  {transition: width 1s;}
+.firstTransition:hover {cursor: pointer;width: 200px}
+
+.secondTransition  {transition: transform 1s, background-color 2s}
+.secondTransition:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    background-color: purple;
+}
+.thirdTransition  {opacity:1; transition: all 1500ms ease-in-out;}
+.thirdTransition:hover  {
+    cursor: pointer;
+    transform: scale(1.2,1.5);
+    background-color: yellow;
+    opacity: 0.3;
+}
+
+.fourthTransition  {font-size:12px; transition: all 2000ms ease-in;}
+.fourthTransition:hover {
+    cursor: pointer;
+    color: yellow;
+    font-size: 40px;
+    transform: rotate(360deg);
+}
+.fifthTransition  {opacity: 1;width:150px; transition: all 1s}
+.fifthTransition:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: papayawhip;
+    color: purple;
+    transform: matrix(1, 0.3, 0.5, 1.5, 1, 2);
+    box-shadow: 10px 10px 45px 3px rgba(0,0,0,0.75)
+}
+.sixthTransition {transition: all 2s ease-out;}
+.sixthTransition:hover {
+    cursor: pointer;
+    transform: translate(30px,60px);
+    background-color: green;
+    font-weight: 900;
+    font-size: 45px;
+    opacity: 0.1;
+    box-shadow: 10px 10px 45px 3px rgba(0,0,0,0.75);
+}
+.prvaAnimUnutra {
+    box-shadow: 0 0 24px 7px rgb(64, 255, 225);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border-top: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-bottom: solid #40ffe1 10px;
+    border-left: solid #40ffe1 10px;
+    animation: unutra 600ms linear infinite;
+    position: relative;
+    top: -125px;
+}
+.prvaAnimSpolja {
+    box-shadow: 0 0 32px 10px rgb(64, 255, 225);
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    padding: 15px;
+    border-top: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-bottom: solid #40ffe1 10px;
+    border-left: solid #40ffe1 10px;
+    animation: spolja 600ms linear infinite;
+    position: relative;
+}
+@keyframes unutra {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes spolja {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+.drugaAnimUnutra {
+    box-shadow: 0 0 24px 7px rgb(222, 255, 76);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border-top: solid transparent 10px;
+    border-bottom: solid transparent 10px;
+    border-right: solid #deff4c 10px;
+    border-left: solid #deff4c 10px;
+    animation: unutra2 1000ms linear infinite;
+    position: relative;
+    top: -125px;
+}
+.drugaAnimSpolja {
+    box-shadow: 0 0 32px 10px rgb(222, 255, 76);
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    padding: 15px;
+    border-left: solid transparent 10px;
+    border-right: solid transparent 10px;
+    border-bottom: solid #deff4c 10px;
+    border-top: solid #deff4c 10px;
+    animation: spolja2 2000ms ease-in-out infinite;
+    position: relative;
+}
+@-webkit-keyframes unutra2 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes spolja2 {
+    0% {transform: rotate(0deg);opacity: 1;}
+    50% {transform: rotate(-360deg);opacity: 0;}
+    100% {transform: rotate(0deg); opacity: 1;}
+}
+div {padding:5px;}
+.homeButton {
+    height: 60px;
+    width: 60px;
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 100;
+}
+.homeButton a {
+    text-align: center;
+    font-weight: 900;
+    display: block;
+    font-size: 18px;
+    color: whitesmoke;
+    background-color: rgba(75,75,75,0.5);
+    text-decoration-line: none;
+    padding: 10px;
+    border: solid whitesmoke 1px;
+    transition: all 500ms;
+}
+.homeButton a:hover {
+    font-size: 28px;
+    color: deepskyblue;
+    background-color: white;
+}
+footer ul {text-align: center}
+footer li {display: inline-block;}
+
+footer a {
+    display: block;
+    color: white;
+    text-decoration-line: none;
+    width: 150px;
+    border-left: solid white 1px;
+    border-right: solid white 1px;
+    text-align: center;
+    margin: 6px 10px;
+    padding: 0 10px;
+    transition: all 500ms;
+}
+footer a:hover {
+    color: #deff4c;
+    text-decoration-line: none;
+    transform: scale(1.2,1.2)
+}
